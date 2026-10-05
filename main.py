@@ -22,15 +22,15 @@ from src.library import LIB_PATH, load_items  # noqa: E402
 from src.live import LiveConfig, LiveEngine  # noqa: E402
 from src.matcher import Matcher  # noqa: E402
 
-def build_matcher() -> Matcher:
+def build_matcher(language: str = "zh") -> Matcher:
     from src.calibrate import build_calibrated_matcher
 
-    m, _meta = build_calibrated_matcher()
+    m, _meta = build_calibrated_matcher(language=language)
     return m
 
 
-def cmd_items() -> None:
-    items = load_items()
+def cmd_items(args: argparse.Namespace) -> None:
+    items = load_items(args.lang)
     print(f"{len(items)} items in {LIB_PATH}")
     for it in items:
         tags = ",".join(it.get("tags") or [])
@@ -42,7 +42,7 @@ def cmd_items() -> None:
 
 
 def cmd_match(args: argparse.Namespace) -> None:
-    m = build_matcher()
+    m = build_matcher(args.lang)
     x, sr = wavio.read_wav(args.wav)
     feat = feature_from_audio(x, sr)
     rank = m.rank(feat, snr_db=args.snr)
@@ -58,8 +58,8 @@ def cmd_match(args: argparse.Namespace) -> None:
 def cmd_live(args: argparse.Namespace) -> None:
     from src.capture import WavSource, open_source
 
-    items = load_items()
-    m = build_matcher()
+    items = load_items(args.lang)
+    m = build_matcher(args.lang)
     cfg = LiveConfig(sr=args.sr)
     engine = LiveEngine(m, cfg)
 
@@ -79,18 +79,26 @@ def cmd_live(args: argparse.Namespace) -> None:
                 width=340,
                 duration_ms=args.hold_ms,
                 max_simultaneous=3,
+                language=args.lang,
             )
         )
         overlay.start()
         beep = not args.no_beep
-        print("[HUD] 平时隐藏，仅命中时弹卡片（约 2.8s 后消失）")
-        print("[HUD] ⚠ 游戏请用「无边框窗口」，独占全屏会盖住悬浮窗")
+        if args.lang == "en":
+            print("[HUD] Hidden until a match; cards fade after about 2.8 seconds.")
+            print("[HUD] Use borderless windowed mode; exclusive fullscreen may cover the overlay.")
+        else:
+            print("[HUD] 平时隐藏，仅命中时弹卡片（约 2.8s 后消失）")
+            print("[HUD] ⚠ 游戏请用「无边框窗口」，独占全屏会盖住悬浮窗")
         if not overlay.ok:
             print("[HUD] 警告：悬浮窗未启动", file=sys.stderr)
 
     kind = "wav" if args.wav else "loopback"
     print(f"[live] source={kind} sr={args.sr} items={len(m.templates)}")
-    print("[live] 命中时：悬浮窗弹卡片（图标+名称+分数条）" + (" + 提示音" if beep else ""))
+    if args.lang == "en":
+        print("[live] A card appears on each match (icon, item name, and score bar)." + (" + alert sound" if beep else ""))
+    else:
+        print("[live] 命中时：悬浮窗弹卡片（图标+名称+分数条）" + (" + 提示音" if beep else ""))
     try:
         source = open_source(kind=kind, path=args.wav, device=args.device, sr=args.sr)
     except Exception as e:
@@ -238,12 +246,14 @@ def main() -> None:
     sub = p.add_subparsers(dest="cmd", required=True)
 
     s = sub.add_parser("items", help="list library items")
-    s.set_defaults(func=lambda a: cmd_items())
+    s.add_argument("--lang", choices=("zh", "en"), default="zh", help="display language")
+    s.set_defaults(func=cmd_items)
 
     s = sub.add_parser("match", help="offline match a wav")
     s.add_argument("--wav", required=True)
     s.add_argument("--top", type=int, default=5)
     s.add_argument("--snr", type=float, default=None, help="estimated SNR dB for adaptive thr")
+    s.add_argument("--lang", choices=("zh", "en"), default="zh", help="display language")
     s.set_defaults(func=cmd_match)
 
     s = sub.add_parser("live", help="real-time match")
@@ -257,6 +267,7 @@ def main() -> None:
     s.add_argument("--y", type=int, default=None, help="overlay top px (default 200)")
     s.add_argument("--hold-ms", type=int, default=2800, help="hit card hold time ms")
     s.add_argument("--verbose", "-v", action="store_true", help="also print near-miss events")
+    s.add_argument("--lang", choices=("zh", "en"), default="zh", help="display language")
     s.set_defaults(func=cmd_live)
 
     s = sub.add_parser("calibrate", help="show auto-calibrated thresholds & confusions")

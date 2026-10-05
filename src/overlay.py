@@ -54,6 +54,7 @@ class OverlayConfig:
     fg: str = "#f2f8ff"
     accent: str = "#2ee59d"
     title: str = "SoundRadar-X"
+    language: str = "zh"
 
 
 class Overlay:
@@ -232,11 +233,12 @@ class Overlay:
                     gold_items = candidate_hints.get("gold", [])
                     non_gold_items = candidate_hints.get("nonGold", [])
 
-                    gold_text = "唯一类大金" if unique else (
-                        "大金可能：" + _format_candidates(gold_items) if gold_items else ""
+                    is_english = self.cfg.language == "en"
+                    gold_text = ("Unique Red Item" if is_english else "唯一类大金") if unique else (
+                        ("Possible Red Item: " if is_english else "大金可能：") + _format_candidates(gold_items) if gold_items else ""
                     )
                     non_gold_text = (
-                        "非大金：" + _format_candidates(non_gold_items) if non_gold_items else ""
+                        ("Possible non-Red Item: " if is_english else "非大金：") + _format_candidates(non_gold_items) if non_gold_items else ""
                     )
                     if gold_text:
                         card["gold"].configure(text=gold_text)

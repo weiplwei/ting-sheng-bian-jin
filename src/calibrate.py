@@ -93,8 +93,9 @@ def build_calibrated_matcher(
     pad: float = 0.15,
     margin_min: float = 0.12,
     homophone_margin_min: float = 0.15,
+    language: str = "zh",
 ) -> tuple[Matcher, dict]:
-    items = load_items()
+    items = load_items(language)
     feats = build_item_feats(items)
     hashes = build_item_hashes(items)
     thr_map = calibrate_thresholds(items, feats, hashes=hashes, pad=pad)

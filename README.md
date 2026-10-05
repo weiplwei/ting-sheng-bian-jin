@@ -42,6 +42,7 @@ py -3.12 -m venv .venv
 ```powershell
 .venv\Scripts\python.exe main.py items
 .venv\Scripts\python.exe main.py live --overlay
+.venv\Scripts\python.exe main.py live --overlay --lang en
 ```
 
 也可以双击 `start_live.bat` 启动悬浮提示。游戏建议使用无边框窗口，以便显示悬浮窗。
@@ -62,8 +63,10 @@ py -3.12 -m venv .venv
 
 ```powershell
 python main.py items
+python main.py items --lang en
 python main.py match --wav "C:\path\to\sample.wav"
 python main.py live --overlay
+python main.py live --overlay --lang en
 python main.py live --seconds 30
 python main.py calibrate
 ```
@@ -79,3 +82,5 @@ python main.py calibrate
 ## 开源许可
 
 项目源码及随仓库提供的默认音库采用 MIT 许可证，详见 [LICENSE](LICENSE)。
+
+英文使用说明见 [README.en.md](README.en.md)。程序默认显示中文；使用 `--lang en` 可切换英文，物品名按游戏英文名称显示。
