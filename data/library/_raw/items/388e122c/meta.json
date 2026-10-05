@@ -1,0 +1,49 @@
+{
+  "id": "388e122c",
+  "name": "花瓶",
+  "icon": "icon.png",
+  "threshold": 0.72,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "大金",
+    "唯一类"
+  ],
+  "note": "唯一类大金",
+  "displayHints": [
+    {
+      "grid": "2x3",
+      "name": "花瓶",
+      "icon": "hints/00.png"
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 3,
+      "gainDb": 0,
+      "source": "recall",
+      "addedAt": "2026-09-20T14:12:43.6510934Z",
+      "origin": {
+        "fileName": "000004-20260920-141224.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 3,
+        "frames": 144000,
+        "bytes": 288044,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 144000
+    }
+  ],
+  "createdAt": "2026-09-20T14:12:43.6516235Z",
+  "updatedAt": "2026-09-20T15:51:57.8269326Z"
+}

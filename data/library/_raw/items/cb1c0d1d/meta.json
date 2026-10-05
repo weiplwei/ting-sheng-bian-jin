@@ -1,0 +1,116 @@
+{
+  "id": "cb1c0d1d",
+  "name": "同音·泥板/理想国",
+  "icon": "icon.png",
+  "threshold": 0.88,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "同音类",
+    "听声鉴宝"
+  ],
+  "note": "听声鉴宝同音组：3×2 天命泥板 vs 2×2 理想国。元数据预置，请用 F8/录入补真实同音样本。",
+  "displayHints": [
+    {
+      "grid": "3×2",
+      "name": "天命泥板",
+      "icon": "hints/00.png",
+      "isGold": true
+    },
+    {
+      "grid": "3×2",
+      "name": "理想国",
+      "icon": "hints/01.png",
+      "isGold": true
+    },
+    {
+      "name": "钛合金板",
+      "grid": "",
+      "isGold": false
+    },
+    {
+      "name": "汽车蓄电池",
+      "grid": "",
+      "isGold": false
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 0.39,
+      "gainDb": 0,
+      "source": "merged:天命泥板-拖动",
+      "addedAt": "2026-09-19T15:11:34.3816854Z",
+      "origin": {
+        "fileName": "天命泥板-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.39,
+        "frames": 18720,
+        "bytes": 37484,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 18720
+    },
+    {
+      "file": "samples/0002.wav",
+      "offsetS": 0,
+      "lenS": 0.395,
+      "gainDb": 0,
+      "source": "merged:天命泥板-拖动",
+      "addedAt": "2026-09-19T15:11:34.3816854Z",
+      "origin": {
+        "fileName": "天命泥板-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.395,
+        "frames": 18960,
+        "bytes": 37964,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 18960
+    },
+    {
+      "file": "samples/0003.wav",
+      "offsetS": 0,
+      "lenS": 0.4,
+      "gainDb": 0,
+      "source": "merged:天命泥板-拖动",
+      "addedAt": "2026-09-19T15:11:34.3816854Z",
+      "origin": {
+        "fileName": "天命泥板-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.4,
+        "frames": 19200,
+        "bytes": 38444,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 19200
+    }
+  ],
+  "createdAt": "2026-09-20T15:16:41.1704969Z",
+  "updatedAt": "2026-09-22T07:15:07.7607447Z"
+}

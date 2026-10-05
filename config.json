@@ -1,0 +1,27 @@
+{
+  "capture": {
+    "device": null,
+    "sr": 48000
+  },
+  "live": {
+    "hopMs": 20,
+    "windowMs": 40,
+    "onsetMarginDb": 10,
+    "highpassHz": 120,
+    "maxEventMs": 450
+  },
+  "match": {
+    "marginMin": 0.04,
+    "homophoneMarginMin": 0.08
+  },
+  "overlay": {
+    "enabled": true,
+    "x": 40,
+    "y": 40,
+    "width": 360,
+    "height": 280,
+    "opacity": 0.92,
+    "showMs": 2500
+  },
+  "profile": "default"
+}

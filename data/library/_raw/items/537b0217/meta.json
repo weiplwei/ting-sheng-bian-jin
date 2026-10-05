@@ -1,0 +1,54 @@
+{
+  "id": "537b0217",
+  "name": "卡莫纳之星/宝石项链",
+  "icon": "icon.png",
+  "threshold": 0.75,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "大金",
+    "唯一类"
+  ],
+  "note": "唯一类大金",
+  "displayHints": [
+    {
+      "grid": "2x2",
+      "name": "卡莫纳之星",
+      "icon": "hints/00.png"
+    },
+    {
+      "grid": "2x2",
+      "name": "宝石项链",
+      "icon": "hints/01.png"
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 0.36,
+      "gainDb": 0,
+      "source": "upload",
+      "addedAt": "2026-09-19T15:11:34.3811849Z",
+      "origin": {
+        "fileName": "卡莫纳之星-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.36,
+        "frames": 17280,
+        "bytes": 34604,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 17280
+    }
+  ],
+  "createdAt": "2026-09-19T15:11:34.3811849Z",
+  "updatedAt": "2026-09-20T15:51:57.8249865Z"
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "name": "听声辨金默认音库",
+  "createdAt": "2026-09-18T06:28:51.5194698Z",
+  "feature": {
+    "kind": "mel-goertzel-v1",
+    "sampleRate": 48000,
+    "frameSize": 2048,
+    "hopSize": 512,
+    "window": "hann",
+    "melBands": 64,
+    "fMinHz": 40,
+    "fMaxHz": 16000,
+    "peaksPerSec": 30
+  },
+  "items": [
+    "267afca3",
+    "361affd2",
+    "388e122c",
+    "537b0217",
+    "56dfb35b",
+    "983e0b90",
+    "9e7e9e83",
+    "cb1c0d1d",
+    "e9f62d39",
+    "32c13817"
+  ]
+}

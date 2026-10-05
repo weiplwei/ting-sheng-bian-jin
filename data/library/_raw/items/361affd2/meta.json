@@ -1,0 +1,172 @@
+{
+  "id": "361affd2",
+  "name": "同音·大框杂项",
+  "icon": "icon.png",
+  "threshold": 0.7,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "同音类",
+    "听声鉴宝"
+  ],
+  "note": "听声鉴宝大框杂项同音组（面具/羽宫等与低价同音件）。元数据预置，请补样本。",
+  "displayHints": [
+    {
+      "grid": "2×2",
+      "name": "真实矩阵",
+      "icon": "hints/00.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "孔雀羽扇",
+      "icon": "hints/01.png",
+      "isGold": true
+    },
+    {
+      "grid": "3×2",
+      "name": "黎明",
+      "icon": "hints/02.png",
+      "isGold": true
+    },
+    {
+      "grid": "3×2",
+      "name": "航天导航仪",
+      "icon": "hints/03.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "法厄同之钟",
+      "icon": "hints/04.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "脑电装置",
+      "icon": "hints/05.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "文明之声",
+      "icon": "hints/06.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×3",
+      "name": "黄金面具",
+      "icon": "hints/07.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×3",
+      "name": "鎏金羽宫",
+      "icon": "hints/08.png",
+      "isGold": true
+    },
+    {
+      "grid": "1×3",
+      "name": "机械手臂",
+      "icon": "hints/09.png",
+      "isGold": true
+    },
+    {
+      "grid": "3×2",
+      "name": "航天实验室",
+      "icon": "hints/10.png",
+      "isGold": false
+    },
+    {
+      "grid": "2×2",
+      "name": "人工心脏",
+      "icon": "hints/11.png",
+      "isGold": false
+    },
+    {
+      "grid": "1×2",
+      "name": "单兵通讯装置",
+      "icon": "hints/12.png",
+      "isGold": false
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 0.385,
+      "gainDb": 0,
+      "source": "merged:脑电接收装置-拖动",
+      "addedAt": "2026-09-19T15:11:34.3811849Z",
+      "origin": {
+        "fileName": "脑电接收装置-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.385,
+        "frames": 18480,
+        "bytes": 37004,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 18480
+    },
+    {
+      "file": "samples/0002.wav",
+      "offsetS": 0,
+      "lenS": 0.38,
+      "gainDb": 0,
+      "source": "merged:脑电接收装置-拖动",
+      "addedAt": "2026-09-19T15:11:34.3811849Z",
+      "origin": {
+        "fileName": "脑电接收装置-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.38,
+        "frames": 18241,
+        "bytes": 36526,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 18241
+    },
+    {
+      "file": "samples/0003.wav",
+      "offsetS": 0,
+      "lenS": 0.38,
+      "gainDb": 0,
+      "source": "merged:脑电接收装置-拖动",
+      "addedAt": "2026-09-19T15:11:34.3811849Z",
+      "origin": {
+        "fileName": "脑电接收装置-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.38,
+        "frames": 18241,
+        "bytes": 36526,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 18241
+    }
+  ],
+  "createdAt": "2026-09-20T15:16:41.1704969Z",
+  "updatedAt": "2026-09-20T16:03:56.0646887Z"
+}

@@ -1,0 +1,10 @@
+# Local Python environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
+
+# Unused staging copy; the registered default item is under its generated ID folder.
+data/library/_raw/items/双头鲁特琴/
+
+# Local Windows shortcut
+*.lnk

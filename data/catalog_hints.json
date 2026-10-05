@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "items": {
+    "267afca3": {
+      "unique": false,
+      "candidateHints": {
+        "gold": [
+          {"name": "目标定位模块", "grid": "2×2"},
+          {"name": "热成像模块", "grid": "2×1"}
+        ],
+        "nonGold": [
+          {"name": "数据线", "grid": "2×1"},
+          {"name": "电台", "grid": "2×1"},
+          {"name": "检测仪", "grid": "2×1"},
+          {"name": "钯金线材", "grid": "2×2"},
+          {"name": "除颤仪", "grid": "2×2"},
+          {"name": "笔记本电脑", "grid": "2×2"},
+          {"name": "摄影机", "grid": "2×2"},
+          {"name": "激光指示模块", "grid": "2×2"},
+          {"name": "天线", "grid": "2×2"}
+        ]
+      }
+    },
+    "361affd2": {
+      "unique": false,
+      "candidateHints": {
+        "gold": [
+          {"name": "真实矩阵", "grid": "2×2"},
+          {"name": "孔雀羽扇", "grid": "2×2"},
+          {"name": "黎明", "grid": "3×2"},
+          {"name": "航天导航仪", "grid": "3×2"},
+          {"name": "法厄同之钟", "grid": "2×2"},
+          {"name": "脑电装置", "grid": "2×2"},
+          {"name": "文明之声", "grid": "2×2"},
+          {"name": "黄金面具", "grid": "2×3"},
+          {"name": "鎏金羽宫", "grid": "2×3"},
+          {"name": "机械手臂", "grid": "1×3"}
+        ],
+        "nonGold": [
+          {"name": "航天实验室", "grid": "3×2"},
+          {"name": "人工心脏", "grid": "2×2"},
+          {"name": "单兵通讯装置", "grid": "1×2"}
+        ]
+      }
+    },
+    "388e122c": {"unique": true},
+    "537b0217": {"unique": true},
+    "56dfb35b": {"unique": true},
+    "983e0b90": {"unique": true},
+    "9e7e9e83": {
+      "unique": false,
+      "candidateHints": {
+        "gold": [
+          {"name": "盛宴雕塑", "grid": "2×3"},
+          {"name": "盘蛇金像", "grid": "2×2"},
+          {"name": "光电模型", "grid": "2×2"}
+        ],
+        "nonGold": [
+          {"name": "石膏像", "grid": "2×3"},
+          {"name": "密码机", "grid": "2×2"}
+        ]
+      }
+    },
+    "cb1c0d1d": {
+      "unique": false,
+      "candidateHints": {
+        "gold": [
+          {"name": "天命泥板", "grid": "3×2"},
+          {"name": "理想国", "grid": "3×2"}
+        ],
+        "nonGold": [
+          {"name": "钛合金板"},
+          {"name": "汽车蓄电池"}
+        ]
+      }
+    },
+    "e9f62d39": {
+      "unique": false,
+      "candidateHints": {
+        "gold": [
+          {"name": "三轴陀螺仪", "grid": "3×2"},
+          {"name": "原型机模块", "grid": "2×2"},
+          {"name": "胶囊电视", "grid": "2×2"},
+          {"name": "琥珀天心", "grid": "2×3"},
+          {"name": "里拉琴", "grid": "2×2"},
+          {"name": "承天浑仪", "grid": "2×2"},
+          {"name": "赫美拉彩蛋", "grid": "2×2"},
+          {"name": "阵列镜片", "grid": "1×2"}
+        ],
+        "nonGold": [
+          {"name": "红外理疗灯", "grid": "2×2"},
+          {"name": "工具套组", "grid": "2×2"},
+          {"name": "钢筋剪", "grid": "3×2"},
+          {"name": "吹风机", "grid": "2×2"},
+          {"name": "电钻", "grid": "2×2"},
+          {"name": "炮弹", "grid": "1×2"},
+          {"name": "手持接收机", "grid": "1×2"}
+        ]
+      }
+    }
+  }
+}

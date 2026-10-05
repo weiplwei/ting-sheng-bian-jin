@@ -1,0 +1,29 @@
+{
+  "id": "32c13817",
+  "name": "双头鲁特琴",
+  "icon": "icon.png",
+  "threshold": 0.75,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "大金",
+    "唯一类"
+  ],
+  "displayHints": [
+    {
+      "grid": "2x3",
+      "name": "双头鲁特琴",
+      "icon": "icon.png"
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 4.44,
+      "gainDb": 0,
+      "source": "upload"
+    }
+  ],
+  "note": "唯一类大金"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "e9f62d39",
+  "name": "同音·琥珀天心类",
+  "icon": "icon.png",
+  "threshold": 0.77,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "同音类",
+    "听声鉴宝"
+  ],
+  "note": "",
+  "displayHints": [
+    {
+      "grid": "3×2",
+      "name": "三轴陀螺仪",
+      "icon": "hints/00.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "原型机模块",
+      "icon": "hints/01.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "胶囊电视",
+      "icon": "hints/02.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×3",
+      "name": "琥珀天心",
+      "icon": "hints/03.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "里拉琴",
+      "icon": "hints/04.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "承天浑仪",
+      "icon": "hints/05.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "赫美拉彩蛋",
+      "icon": "hints/06.png",
+      "isGold": true
+    },
+    {
+      "grid": "1×2",
+      "name": "阵列镜片",
+      "icon": "hints/07.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "红外理疗灯",
+      "icon": "hints/08.png",
+      "isGold": false
+    },
+    {
+      "grid": "2×2",
+      "name": "工具套组",
+      "icon": "hints/09.png",
+      "isGold": false
+    },
+    {
+      "grid": "3×2",
+      "name": "钢筋剪",
+      "icon": "hints/10.png",
+      "isGold": false
+    },
+    {
+      "grid": "2×2",
+      "name": "吹风机",
+      "icon": "hints/11.png",
+      "isGold": false
+    },
+    {
+      "grid": "2×2",
+      "name": "电钻",
+      "icon": "hints/12.png",
+      "isGold": false
+    },
+    {
+      "grid": "1×2",
+      "name": "炮弹",
+      "icon": "hints/13.png",
+      "isGold": false
+    },
+    {
+      "grid": "1×2",
+      "name": "手持接收机",
+      "icon": "hints/14.png",
+      "isGold": false
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 3,
+      "gainDb": 0,
+      "source": "merged:琥珀天心-拿起",
+      "addedAt": "2026-09-19T16:31:25.6641857Z",
+      "origin": {
+        "fileName": "000001-20260919-163049.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 3,
+        "frames": 144000,
+        "bytes": 288044,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 144000
+    }
+  ],
+  "createdAt": "2026-09-20T15:16:41.1704969Z",
+  "updatedAt": "2026-09-22T13:43:16.5087933Z"
+}

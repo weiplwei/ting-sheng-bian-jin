@@ -1,0 +1,49 @@
+{
+  "id": "983e0b90",
+  "name": "金狮雕像",
+  "icon": "icon.png",
+  "threshold": 0.72,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "大金",
+    "唯一类"
+  ],
+  "note": "唯一类大金",
+  "displayHints": [
+    {
+      "grid": "3x2",
+      "name": "金狮雕像",
+      "icon": "hints/00.png"
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 0.4,
+      "gainDb": 0,
+      "source": "upload",
+      "addedAt": "2026-09-19T15:11:34.3811849Z",
+      "origin": {
+        "fileName": "金狮子-拖动.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 0.4,
+        "frames": 19199,
+        "bytes": 38442,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 19199
+    }
+  ],
+  "createdAt": "2026-09-19T15:11:34.3811849Z",
+  "updatedAt": "2026-09-20T16:18:48.585645Z"
+}

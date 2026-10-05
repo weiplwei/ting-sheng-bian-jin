@@ -1,0 +1,74 @@
+{
+  "id": "9e7e9e83",
+  "name": "同音·雕塑组",
+  "icon": "icon.png",
+  "threshold": 0.72,
+  "cooldownMs": 400,
+  "profile": "default",
+  "tags": [
+    "同音类",
+    "听声鉴宝"
+  ],
+  "note": "听声鉴宝同音组：盛宴雕塑 / 盘蛇金像 / 光电模型。元数据预置，请补样本。",
+  "displayHints": [
+    {
+      "grid": "2×3",
+      "name": "盛宴雕塑",
+      "icon": "hints/00.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "盘蛇金像",
+      "icon": "hints/01.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×2",
+      "name": "光电模型",
+      "icon": "hints/02.png",
+      "isGold": true
+    },
+    {
+      "grid": "2×3",
+      "name": "石膏像",
+      "icon": "hints/03.png",
+      "isGold": false
+    },
+    {
+      "grid": "2×2",
+      "name": "密码机",
+      "icon": "hints/04.png",
+      "isGold": false
+    }
+  ],
+  "samples": [
+    {
+      "file": "samples/0001.wav",
+      "offsetS": 0,
+      "lenS": 3,
+      "gainDb": 0,
+      "source": "merged:盛宴雕塑",
+      "addedAt": "2026-09-20T14:15:33.6110135Z",
+      "origin": {
+        "fileName": "000005-20260920-141513.wav",
+        "container": "wav",
+        "formatTag": "PCM",
+        "sampleRate": 48000,
+        "channels": 1,
+        "bitsPerSample": 16,
+        "durationS": 3,
+        "frames": 144000,
+        "bytes": 288044,
+        "resampled": false,
+        "downmixed": false
+      },
+      "storedSampleRate": 48000,
+      "storedChannels": 1,
+      "storedBitsPerSample": 16,
+      "frames": 144000
+    }
+  ],
+  "createdAt": "2026-09-20T15:16:41.1704969Z",
+  "updatedAt": "2026-09-20T15:51:57.7514198Z"
+}
