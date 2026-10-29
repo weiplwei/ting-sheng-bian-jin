@@ -15,13 +15,13 @@
 ## 环境
 
 - Windows 10/11
-- Python 3.12（建议）
+- Python 3.12（建议）或 Python 3.13
 - 扬声器或耳机的 WASAPI 回环采集支持
 
 ## 新手使用（Windows）
 
 1. 从 GitHub 下载 ZIP 并解压到一个固定目录。
-2. 安装 [Python 3.12](https://www.python.org/downloads/windows/)；安装时启用 Python Launcher。
+2. 安装 [Python 3.12](https://www.python.org/downloads/windows/)（建议）或 Python 3.13；安装时启用 Python Launcher。
 3. 双击 `setup.bat`，等待虚拟环境和依赖安装完成。
 4. 双击 `start_live.bat` 即可使用仓库附带的默认音库。将游戏设置为无边框窗口并正常播放声音；命中时悬浮窗会显示候选物品和格子信息。
 5. 停止时在启动窗口按 `Ctrl+C`。
@@ -36,6 +36,8 @@
 py -3.12 -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
+
+如果只安装了 Python 3.13，将第一行改为 `py -3.13 -m venv .venv`。
 
 默认音库已随仓库提供，也可以用命令行启动：
 

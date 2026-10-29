@@ -7,7 +7,7 @@ This project only provides sound alerts. It does not purchase items or control t
 ## Quick start (Windows)
 
 1. Download and extract the repository ZIP.
-2. Install [Python 3.12](https://www.python.org/downloads/windows/) and enable the Python Launcher.
+2. Install [Python 3.12](https://www.python.org/downloads/windows/) (recommended) or Python 3.13 and enable the Python Launcher.
 3. Run `setup.bat` and wait for dependencies to install.
 4. Run `start_live.bat` to use the included default sound library. Set the game to borderless windowed mode for the overlay.
 5. Press `Ctrl+C` in the console to stop.
@@ -35,6 +35,8 @@ py -3.12 -m venv .venv
 ```
 
 To replace the library, drop a compatible SoundRadar `.srz` file onto `import_library.bat`. Importing replaces the library index; back up `data/library/` first. You can also replace WAV samples under `data/library/_raw/items/<item-id>/samples/` while keeping the paths in `items.json` unchanged. Group candidate names and inventory sizes are maintained in `data/catalog_hints.json`; English labels are in `data/catalog_hints.en.json`.
+
+If you only have Python 3.13 installed, use `py -3.13 -m venv .venv` for the first command in the manual setup block.
 
 ## Notes
 

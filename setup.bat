@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal EnableDelayedExpansion
 cd /d "%~dp0"
 
 where py >nul 2>nul
@@ -9,16 +9,28 @@ if errorlevel 1 (
     exit /b 1
 )
 
-py -3.12 --version >nul 2>nul
+set "PYTHON_LAUNCHER=py -3.12"
+%PYTHON_LAUNCHER% --version >nul 2>nul
 if errorlevel 1 (
-    echo Python 3.12 was not found. Install Python 3.12, then run this file again.
-    pause
-    exit /b 1
+    set "PYTHON_LAUNCHER=py -3.13"
+    !PYTHON_LAUNCHER! --version >nul 2>nul
+    if errorlevel 1 (
+        echo Python 3.12 or 3.13 was not found. Install either version, then run this file again.
+        pause
+        exit /b 1
+    )
 )
 
-if not exist ".venv\Scripts\python.exe" (
+if exist ".venv\Scripts\python.exe" (
+    ".venv\Scripts\python.exe" --version >nul 2>nul
+    if errorlevel 1 (
+        echo Repairing the existing Python environment...
+        !PYTHON_LAUNCHER! -m venv --clear .venv
+        if errorlevel 1 goto failed
+    )
+) else (
     echo Creating the local Python environment...
-    py -3.12 -m venv .venv
+    !PYTHON_LAUNCHER! -m venv .venv
     if errorlevel 1 goto failed
 )
 
